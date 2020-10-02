@@ -4,7 +4,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class TcpServer {
+public class TwoWayTcpServer {
 
   public static void main(String[] args) throws Exception {
     ServerSocket ss = new ServerSocket(5656);
@@ -22,6 +22,10 @@ public class TcpServer {
         ss.close();
         break;
       }
+      System.out.println("Enter your message:");
+      String str1 = scan.nextLine();
+      dout.writeUTF(str1);
+      dout.flush();
     }
 
   }

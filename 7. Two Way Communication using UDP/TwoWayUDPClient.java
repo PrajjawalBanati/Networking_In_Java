@@ -3,10 +3,12 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Scanner;
 
-public class UDPClient {
+public class TwoWayUDPClient {
 
   public static void main(String[] args) throws Exception {
     DatagramSocket ds = new DatagramSocket();
+    DatagramSocket ds1 = new DatagramSocket(6000);
+    byte[] buff = new byte[1024];
     Scanner scan = new Scanner(System.in);
     while (true) {
       System.out.println("Enter your message:");
@@ -18,7 +20,11 @@ public class UDPClient {
         ds.close();
         break;
       }
-
+      DatagramPacket dpreceive = new DatagramPacket(buff, buff.length);
+      ds1.receive(dpreceive);
+      String str1 = new String(dpreceive.getData(), 0, dpreceive.getLength());
+      System.out.println("Server Messaged--> " + str1);
+      buff = new byte[1024];
     }
   }
 }
