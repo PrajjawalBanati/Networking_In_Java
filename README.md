@@ -2,7 +2,7 @@
 Networking means communication between two or more devices connected in a network. Networking allows sharing of files, data among a group
 of users. Java allows user to develop a complete system to communicate between certain users.
 
-## Pre-Requistes
+## Pre-Requisites
 - Difference between LAN-MAN-WAN.
 - What is WWW(World Wide Web)?
 - IP Address Concept
@@ -16,7 +16,7 @@ of users. Java allows user to develop a complete system to communicate between c
 ## Java Networking
  For networking in Java firstly we should know that how many sockets java allows us to use ? Java allows us to use two sockets:
  - Stream Sockets
- > Stream Sockets use TCP protocol to create a communication between two systems. Here data flows in the form of Continous Streams while the connection is in place.
+ > Stream Sockets use TCP protocol to create a communication between two systems. Here data flows in the form of Continuous Streams while the connection is in place.
  
  - Datagram Sockets
  > Datagram Sockets use UDP protocol in which the packets of information are shared between two systems. It is Connection-less service protocol.
@@ -38,7 +38,7 @@ of users. Java allows user to develop a complete system to communicate between c
  ## Communication Using UDP
  
  ### One-Way Communication
- - First Run the **Server.java** program so that server gets ready to recieve the messages then run the **Client.java** program.
+ - First Run the **Server.java** program so that server gets ready to receive the messages then run the **Client.java** program.
  - #### [Server.java](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/6.%20Communication%20Using%20UDP/UDPServer.java)
  
       ![img0](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/Images/UDP_OneWayServer.JPG)
@@ -48,7 +48,7 @@ of users. Java allows user to develop a complete system to communicate between c
       ![img1](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/Images/UDP_OneWayClient.JPG)
      
  ### Two-Way Communication
-- First Run the **Server.java** program so that server gets ready to recieve the messages then run the **Client.java** program.
+- First Run the **Server.java** program so that server gets ready to receive the messages then run the **Client.java** program.
 - #### [Server.java](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/7.%20Two%20Way%20Communication%20using%20UDP/UDPServer.java)
 
      ![img0](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/Images/UDP_TwoWayServer.JPG)
@@ -60,7 +60,7 @@ of users. Java allows user to develop a complete system to communicate between c
  ## Communication Using TCP
  
  ### One-Way Communication
- - First Run the **Server.java** program so that server gets ready to recieve the messages then run the **Client.java** program.
+ - First Run the **Server.java** program so that server gets ready to receive the messages then run the **Client.java** program.
  - #### [Server.java](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/9.%20Communication%20using%20TCP/TcpServer.java)
  
       ![img0](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/Images/TCP_OneWayServer.JPG)
@@ -70,7 +70,7 @@ of users. Java allows user to develop a complete system to communicate between c
       ![img1](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/Images/TCP_OneWayClient.JPG)
      
  ### Two-Way Communication
- - First Run the **Server.java** program so that server gets ready to recieve the messages then run the **Client.java** program.
+ - First Run the **Server.java** program so that server gets ready to receive the messages then run the **Client.java** program.
 - #### [Server.java](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/10.%20Two%20Way%20Communication%20using%20TCP/TcpServer.java)
 
      ![img0](https://github.com/PrajjawalBanati/Networking_In_Java/blob/master/Images/TCP_TwoWayServer.JPG)
